@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario con Tailwind CSS</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body class="bg-gray-100">
+
+<div class="max-w-lg mx-auto mt-10 p-6 bg-white rounded-lg shadow-lg">
+  <h2 class="text-2xl font-semibold text-center mb-6">Formulario de Contacto</h2>
+  <form action="formularios.php" method="POST">
+    <div class="mb-4">
+      <label for="nombre" class="block text-gray-700">Nombre</label>
+      <input type="text" class="w-full p-3 border border-gray-300 rounded-lg" id="nombre" name="nombre" required>
+    </div>
+    <div class="mb-4">
+      <label for="apellido" class="block text-gray-700">Apellido</label>
+      <input type="text" class="w-full p-3 border border-gray-300 rounded-lg" id="apellido" name="apellido" required>
+    </div>
+    <div class="mb-4">
+      <label for="comentario" class="block text-gray-700">telefono</label>
+      <input type="text" class="w-full p-3 border border-gray-300 rounded-lg" id="telefono" name="telefono" required>
+    </div>
+    <button type="submit" class="w-full bg-blue-500 text-white p-3 rounded-lg hover:bg-blue-600 transition duration-300">Enviar</button>
+  </form>
+</div>
+
+</body>
+</html>
